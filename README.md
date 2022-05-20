@@ -76,7 +76,7 @@ To test the all endpoint, in your local browser, navigate to http://127.0.0.1:50
 }
 ```
 
-### Potential Next Steps
+## Potential Next Steps
 1. Working on more general purpose code so the code traversing the JSON is not repeated
 2. Thinking more deeply about the payloads returned, specifically what variable names would be useful for the client/end user and what formats would be more useful (e.g. the nested JSONs as shown or a record-oriented response JSON)
 3. Consider loading the data into a pandas dataframe to take advantage of the lightweight querying/aggregating capabilities.
