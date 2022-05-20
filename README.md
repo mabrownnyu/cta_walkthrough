@@ -1,5 +1,6 @@
 # API for Primary Results
 Author: Megan Brown
+
 This repo contains code for running a small API to return
 primary results based on a local file `primary_results.json`.
 
