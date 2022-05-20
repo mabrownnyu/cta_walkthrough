@@ -83,3 +83,5 @@ To test the all endpoint, in your local browser, navigate to http://127.0.0.1:50
 4. More robust error responses/possibly fuzzy matches or query suggestions based on misspellings
 5. Error handling for fields missing in the JSON (e.g. if a county is in the JSON but had no reported election results)
 6. Formatting the endpoints to work like `<state>/<county>` rather than through query parameters.
+7. Think about scalability re: how large the file would potentially be/whether it
+is reasonable to hold the data in memory while the app is running. 
