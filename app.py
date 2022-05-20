@@ -83,6 +83,7 @@ class County(Resource):
             for candidate, votes in candidates.items():
                 if votes > max_votes:
                     winning_candidate = candidate
+                    max_votes = votes
 
             # after iterating through all the candidates, add the winning candidate
             # to the dictionary paylod
@@ -135,6 +136,7 @@ class State(Resource):
                 for candidate, votes in candidates.items():
                     if votes > max_votes:
                         winning_candidate = candidate
+                        max_votes = votes
 
                 # after iterating through all the candidates, add the winning candidate
                 # to the dictionary paylod
@@ -174,6 +176,7 @@ class All(Resource):
                     for candidate, votes in candidates.items():
                         if votes > max_votes:
                             winning_candidate = candidate
+                            max_votes = votes
 
                     # after iterating through all the candidates, add the winning candidate
                     # to the dictionary paylod
