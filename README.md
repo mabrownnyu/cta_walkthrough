@@ -42,8 +42,8 @@ To test the county endpoint, in your local browser, navigate to http://127.0.0.1
 ```
 {
     "data": {
-        "Democrats": "McGovern",
-        "Republicans": "McCloskey"
+        "Democrats": "Humphrey",
+        "Republicans": "Nixon"
     }
 }
 ```
@@ -54,8 +54,8 @@ To test the state endpoint, in your local browser, navigate to http://127.0.0.1:
 {
     "data": {
         "Chester": {
-            "Democrats": "McGovern",
-            "Republicans": "McCloskey"
+            "Democrats": "Humphrey",
+            "Republicans": "Nixon"
         }
     }
 }
@@ -68,8 +68,8 @@ To test the all endpoint, in your local browser, navigate to http://127.0.0.1:50
     "data": {
         "Pennsylvania": {
             "Chester": {
-                "Democrats": "McGovern",
-                "Republicans": "McCloskey"
+                "Democrats": "Humphrey",
+                "Republicans": "Nixon"
             }
         }
     }
@@ -82,4 +82,4 @@ To test the all endpoint, in your local browser, navigate to http://127.0.0.1:50
 3. Consider loading the data into a pandas dataframe to take advantage of the lightweight querying/aggregating capabilities.
 4. More robust error responses/possibly fuzzy matches or query suggestions based on misspellings
 5. Error handling for fields missing in the JSON (e.g. if a county is in the JSON but had no reported election results)
-6. Formatting the endpoints to work like <state>/<county> rather than through query parameters. 
+6. Formatting the endpoints to work like `<state>/<county>` rather than through query parameters.
