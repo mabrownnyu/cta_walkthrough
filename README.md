@@ -34,8 +34,10 @@ python app.py
 `/all`
 No parameters
 
+
+## Examples
 ### County Endpoint
-To test each of the endpoints, in your local browser, navigate to http://127.0.0.1:5000/county?state=Pennsylvania&county=Chester. This should return:
+To test the county endpoint, in your local browser, navigate to http://127.0.0.1:5000/county?state=Pennsylvania&county=Chester. This should return:
 ```
 {
     "data": {
@@ -46,7 +48,7 @@ To test each of the endpoints, in your local browser, navigate to http://127.0.0
 ```
 
 ### State Endpoint
-To test each of the endpoints, in your local browser, navigate to http://127.0.0.1:5000/county?state=Pennsylvania. This should return:
+To test the state endpoint, in your local browser, navigate to http://127.0.0.1:5000/county?state=Pennsylvania. This should return:
 ```
 {
     "data": {
@@ -59,7 +61,7 @@ To test each of the endpoints, in your local browser, navigate to http://127.0.0
 ```
 
 ### All Endpoint
-To test each of the endpoints, in your local browser, navigate to http://127.0.0.1:5000/all. This should return:
+To test the all endpoint, in your local browser, navigate to http://127.0.0.1:5000/all. This should return:
 ```
 {
     "data": {
