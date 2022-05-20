@@ -1,5 +1,6 @@
 # API for Primary Results
 Author: Megan Brown
+
 This repo contains code for running a small API to return
 primary results based on a local file `primary_results.json`.
 
@@ -34,8 +35,10 @@ python app.py
 `/all`
 No parameters
 
+
+## Examples
 ### County Endpoint
-To test each of the endpoints, in your local browser, navigate to http://127.0.0.1:5000/county?state=Pennsylvania&county=Chester. This should return:
+To test the county endpoint, in your local browser, navigate to http://127.0.0.1:5000/county?state=Pennsylvania&county=Chester. This should return:
 ```
 {
     "data": {
@@ -46,7 +49,7 @@ To test each of the endpoints, in your local browser, navigate to http://127.0.0
 ```
 
 ### State Endpoint
-To test each of the endpoints, in your local browser, navigate to http://127.0.0.1:5000/county?state=Pennsylvania. This should return:
+To test the state endpoint, in your local browser, navigate to http://127.0.0.1:5000/county?state=Pennsylvania. This should return:
 ```
 {
     "data": {
@@ -59,7 +62,7 @@ To test each of the endpoints, in your local browser, navigate to http://127.0.0
 ```
 
 ### All Endpoint
-To test each of the endpoints, in your local browser, navigate to http://127.0.0.1:5000/all. This should return:
+To test the all endpoint, in your local browser, navigate to http://127.0.0.1:5000/all. This should return:
 ```
 {
     "data": {
@@ -73,7 +76,7 @@ To test each of the endpoints, in your local browser, navigate to http://127.0.0
 }
 ```
 
-### Potential Next Steps
+## Potential Next Steps
 1. Working on more general purpose code so the code traversing the JSON is not repeated
 2. Thinking more deeply about the payloads returned, specifically what variable names would be useful for the client/end user and what formats would be more useful (e.g. the nested JSONs as shown or a record-oriented response JSON)
 3. Consider loading the data into a pandas dataframe to take advantage of the lightweight querying/aggregating capabilities.
